@@ -16,10 +16,12 @@ int main()
 		if(userEntry%2==0){
 			cout<<"User entry was even."<<endl;
 		} 
-		else{
+		else if(userEntry%1==0){
 			cout<<"User entry was odd."<<endl;
 		}
-	
+		else{
+			cout<<"Entry was not an interger" <<endl;
+		}	
 		cout<<"Would you like to repeat?(1 for yes, 2 for no)"<<endl;
 		cin>>userEntryTwo;
 
