@@ -6,7 +6,7 @@ int main()
 {
 	// Variables
 	int userEntry = 0;
-	int userEntryTwo = 0; 
+	char userEntryTwo = '\0'; 
 	bool keepLoop = false;
 
 	do {
@@ -22,13 +22,13 @@ int main()
 		else{
 			cout<<"Entry was not an interger" <<endl;
 		}	
-		cout<<"Would you like to repeat?(1 for yes, 2 for no)"<<endl;
+		cout<<"Would you like to repeat?(y for yes, q for no)"<<endl;
 		cin>>userEntryTwo;
 
-		if(userEntryTwo==1) {
+		if(userEntryTwo=='y') {
 			keepLoop = true;
 		}
-		else if(userEntryTwo==2){
+		else if(userEntryTwo=='q'){
 			keepLoop = false;
 		}
 		else {
